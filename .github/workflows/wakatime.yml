@@ -2,12 +2,13 @@ name: Update WakaTime Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Her gün gece 00:00'da çalışır
-  workflow_dispatch: # Manuel çalıştırma imkanı
+    - cron: "0 0 * * *"   # Her gün gece 00:00'da çalışır
+  workflow_dispatch:       # Manuel tetikleme için
 
 jobs:
   update-wakatime:
     runs-on: ubuntu-latest
+
     steps:
       - name: Repo'yu klonla
         uses: actions/checkout@v4
@@ -17,7 +18,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Bağımlılıkları kur
+      - name: Bağımlılıkları yükle
         run: pip install requests
 
       - name: WakaTime verilerini çek ve kaydet
@@ -29,25 +30,24 @@ jobs:
           api_key = os.getenv("WAKATIME_API_KEY")
           headers = {"Authorization": f"Bearer {api_key}"}
 
-          # all_time yerine last_7_days ile test et, sonra all_time'a geçebilirsin
-          url = "https://wakatime.com/api/v1/users/current/stats/all_time"
+          # İlk test için last_7_days kullan, çalıştığında all_time'a geçebilirsin
+          url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
 
           r = requests.get(url, headers=headers)
           if r.status_code == 200:
               data = r.json()
-              # public klasörünün var olduğundan emin ol
-              import os
               os.makedirs("public", exist_ok=True)
               with open("public/wakatime.json", "w", encoding="utf-8") as f:
                   json.dump(data, f, ensure_ascii=False, indent=2)
               print("✅ WakaTime verileri kaydedildi.")
           else:
               print(f"❌ Hata: {r.status_code} - {r.text}")
+        shell: python
 
       - name: Commit ve push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/wakatime.json
-          git commit -m "Update WakaTime stats" || echo "No changes to commit"
+          git diff --cached --quiet || git commit -m "Update WakaTime stats"
           git push
