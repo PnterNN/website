@@ -1,0 +1,730 @@
+{
+  "data": {
+    "id": "476f9d3b-89be-4b87-8b95-7cf6330e1562",
+    "user_id": "018cd354-516b-4075-b139-61022b14fded",
+    "range": "last_7_days",
+    "start": "2025-09-02T21:00:00Z",
+    "end": "2025-09-09T20:59:59Z",
+    "timeout": 15,
+    "writes_only": false,
+    "timezone": "Europe/Istanbul",
+    "holidays": 2,
+    "status": "ok",
+    "created_at": "2025-09-09T03:18:27Z",
+    "modified_at": "2025-09-10T02:11:37Z",
+    "editors": [
+      {
+        "total_seconds": 113929.898592,
+        "name": "Visual Studio",
+        "percent": 99.99,
+        "digital": "31:38",
+        "decimal": "31.63",
+        "text": "31 hrs 38 mins",
+        "hours": 31,
+        "minutes": 38
+      },
+      {
+        "total_seconds": 10.971197,
+        "name": "Unknown Editor",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      }
+    ],
+    "machines": [
+      {
+        "total_seconds": 113940.869789,
+        "name": "PnterNN-LAPTOP",
+        "machine_name_id": "6c515147-d22b-45b0-b2db-7a50aa57f70e",
+        "percent": 100.0,
+        "digital": "31:39",
+        "decimal": "31.65",
+        "text": "31 hrs 39 mins",
+        "hours": 31,
+        "minutes": 39
+      }
+    ],
+    "total_seconds_including_other_language": 113940.869789,
+    "languages": [
+      {
+        "name": "C#",
+        "total_seconds": 85784.957121,
+        "percent": 75.29,
+        "digital": "23:49",
+        "decimal": "23.82",
+        "text": "23 hrs 49 mins",
+        "hours": 23,
+        "minutes": 49
+      },
+      {
+        "name": "Binary",
+        "total_seconds": 17164.635804,
+        "percent": 15.06,
+        "digital": "4:46",
+        "decimal": "4.77",
+        "text": "4 hrs 46 mins",
+        "hours": 4,
+        "minutes": 46
+      },
+      {
+        "name": "JSON",
+        "total_seconds": 8304.168946,
+        "percent": 7.29,
+        "digital": "2:18",
+        "decimal": "2.30",
+        "text": "2 hrs 18 mins",
+        "hours": 2,
+        "minutes": 18
+      },
+      {
+        "name": "Microsoft Visual Studio Solution",
+        "total_seconds": 869.977701,
+        "percent": 0.76,
+        "digital": "0:14",
+        "decimal": "0.23",
+        "text": "14 mins",
+        "hours": 0,
+        "minutes": 14
+      },
+      {
+        "name": "Git Config",
+        "total_seconds": 621.162489,
+        "percent": 0.55,
+        "digital": "0:10",
+        "decimal": "0.17",
+        "text": "10 mins",
+        "hours": 0,
+        "minutes": 10
+      },
+      {
+        "name": "SQL",
+        "total_seconds": 511.22242,
+        "percent": 0.45,
+        "digital": "0:08",
+        "decimal": "0.13",
+        "text": "8 mins",
+        "hours": 0,
+        "minutes": 8
+      },
+      {
+        "name": "Text",
+        "total_seconds": 200.53193,
+        "percent": 0.18,
+        "digital": "0:03",
+        "decimal": "0.05",
+        "text": "3 mins",
+        "hours": 0,
+        "minutes": 3
+      },
+      {
+        "name": "Other",
+        "total_seconds": 155.578123,
+        "percent": 0.14,
+        "digital": "0:02",
+        "decimal": "0.03",
+        "text": "2 mins",
+        "hours": 0,
+        "minutes": 2
+      },
+      {
+        "name": "XML",
+        "total_seconds": 154.647661,
+        "percent": 0.14,
+        "digital": "0:02",
+        "decimal": "0.03",
+        "text": "2 mins",
+        "hours": 0,
+        "minutes": 2
+      },
+      {
+        "name": "XAML",
+        "total_seconds": 146.404164,
+        "percent": 0.13,
+        "digital": "0:02",
+        "decimal": "0.03",
+        "text": "2 mins",
+        "hours": 0,
+        "minutes": 2
+      },
+      {
+        "name": "HTTP",
+        "total_seconds": 27.58343,
+        "percent": 0.02,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      }
+    ],
+    "is_up_to_date_pending_future": false,
+    "total_seconds": 113785.291666,
+    "dependencies": [
+      {
+        "total_seconds": 50322.998495,
+        "name": "NovaCenter",
+        "percent": 37.49,
+        "digital": "13:58",
+        "decimal": "13.97",
+        "text": "13 hrs 58 mins",
+        "hours": 13,
+        "minutes": 58
+      },
+      {
+        "total_seconds": 26006.59026,
+        "name": "Serilog",
+        "percent": 19.37,
+        "digital": "7:13",
+        "decimal": "7.22",
+        "text": "7 hrs 13 mins",
+        "hours": 7,
+        "minutes": 13
+      },
+      {
+        "total_seconds": 18584.367479,
+        "name": "ApplicationCore",
+        "percent": 13.84,
+        "digital": "5:09",
+        "decimal": "5.15",
+        "text": "5 hrs 9 mins",
+        "hours": 5,
+        "minutes": 9
+      },
+      {
+        "total_seconds": 9099.667927,
+        "name": "FluentValidation",
+        "percent": 6.78,
+        "digital": "2:31",
+        "decimal": "2.52",
+        "text": "2 hrs 31 mins",
+        "hours": 2,
+        "minutes": 31
+      },
+      {
+        "total_seconds": 5383.240753,
+        "name": "Scalar",
+        "percent": 4.01,
+        "digital": "1:29",
+        "decimal": "1.48",
+        "text": "1 hr 29 mins",
+        "hours": 1,
+        "minutes": 29
+      },
+      {
+        "total_seconds": 4793.985676,
+        "name": "StellarLicenseManager",
+        "percent": 3.57,
+        "digital": "1:19",
+        "decimal": "1.32",
+        "text": "1 hr 19 mins",
+        "hours": 1,
+        "minutes": 19
+      },
+      {
+        "total_seconds": 3895.057838,
+        "name": "Standard",
+        "percent": 2.9,
+        "digital": "1:04",
+        "decimal": "1.07",
+        "text": "1 hr 4 mins",
+        "hours": 1,
+        "minutes": 4
+      },
+      {
+        "total_seconds": 3839.086847,
+        "name": "HardwareAccessService",
+        "percent": 2.86,
+        "digital": "1:03",
+        "decimal": "1.05",
+        "text": "1 hr 3 mins",
+        "hours": 1,
+        "minutes": 3
+      },
+      {
+        "total_seconds": 2423.171728,
+        "name": "DocumentFormat",
+        "percent": 1.81,
+        "digital": "0:40",
+        "decimal": "0.67",
+        "text": "40 mins",
+        "hours": 0,
+        "minutes": 40
+      },
+      {
+        "total_seconds": 1670.150627,
+        "name": "Stellar",
+        "percent": 1.24,
+        "digital": "0:27",
+        "decimal": "0.45",
+        "text": "27 mins",
+        "hours": 0,
+        "minutes": 27
+      },
+      {
+        "total_seconds": 1666.405079,
+        "name": "CenterAccessService",
+        "percent": 1.24,
+        "digital": "0:27",
+        "decimal": "0.45",
+        "text": "27 mins",
+        "hours": 0,
+        "minutes": 27
+      },
+      {
+        "total_seconds": 1109.991046,
+        "name": "Prism",
+        "percent": 0.83,
+        "digital": "0:18",
+        "decimal": "0.30",
+        "text": "18 mins",
+        "hours": 0,
+        "minutes": 18
+      },
+      {
+        "total_seconds": 665.447899,
+        "name": "Dapper",
+        "percent": 0.5,
+        "digital": "0:11",
+        "decimal": "0.18",
+        "text": "11 mins",
+        "hours": 0,
+        "minutes": 11
+      },
+      {
+        "total_seconds": 624.401434,
+        "name": "SqlConnection(_connectionString)",
+        "percent": 0.47,
+        "digital": "0:10",
+        "decimal": "0.17",
+        "text": "10 mins",
+        "hours": 0,
+        "minutes": 10
+      },
+      {
+        "total_seconds": 624.401434,
+        "name": "db",
+        "percent": 0.47,
+        "digital": "0:10",
+        "decimal": "0.17",
+        "text": "10 mins",
+        "hours": 0,
+        "minutes": 10
+      },
+      {
+        "total_seconds": 521.302557,
+        "name": "Nova",
+        "percent": 0.39,
+        "digital": "0:08",
+        "decimal": "0.13",
+        "text": "8 mins",
+        "hours": 0,
+        "minutes": 8
+      },
+      {
+        "total_seconds": 426.914822,
+        "name": "DBAccessService",
+        "percent": 0.32,
+        "digital": "0:07",
+        "decimal": "0.12",
+        "text": "7 mins",
+        "hours": 0,
+        "minutes": 7
+      },
+      {
+        "total_seconds": 392.309222,
+        "name": "DeviceId",
+        "percent": 0.29,
+        "digital": "0:06",
+        "decimal": "0.10",
+        "text": "6 mins",
+        "hours": 0,
+        "minutes": 6
+      },
+      {
+        "total_seconds": 392.309222,
+        "name": "HttpClient(handler)",
+        "percent": 0.29,
+        "digital": "0:06",
+        "decimal": "0.10",
+        "text": "6 mins",
+        "hours": 0,
+        "minutes": 6
+      },
+      {
+        "total_seconds": 392.309222,
+        "name": "Uri(_baseUrl)",
+        "percent": 0.29,
+        "digital": "0:06",
+        "decimal": "0.10",
+        "text": "6 mins",
+        "hours": 0,
+        "minutes": 6
+      },
+      {
+        "total_seconds": 392.309222,
+        "name": "Newtonsoft",
+        "percent": 0.29,
+        "digital": "0:06",
+        "decimal": "0.10",
+        "text": "6 mins",
+        "hours": 0,
+        "minutes": 6
+      },
+      {
+        "total_seconds": 271.645758,
+        "name": "Org",
+        "percent": 0.2,
+        "digital": "0:04",
+        "decimal": "0.07",
+        "text": "4 mins",
+        "hours": 0,
+        "minutes": 4
+      },
+      {
+        "total_seconds": 121.494484,
+        "name": "RandomNumberGenerator",
+        "percent": 0.09,
+        "digital": "0:02",
+        "decimal": "0.03",
+        "text": "2 mins",
+        "hours": 0,
+        "minutes": 2
+      },
+      {
+        "total_seconds": 85.645494,
+        "name": "Azure",
+        "percent": 0.06,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 70.294588,
+        "name": "Polly",
+        "percent": 0.05,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 64.788905,
+        "name": "ManagementObjectSearcher()",
+        "percent": 0.05,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 64.788905,
+        "name": "ServiceController(serviceName)",
+        "percent": 0.05,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 64.788905,
+        "name": "SHA256",
+        "percent": 0.05,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 62.468765,
+        "name": "_timeout,",
+        "percent": 0.05,
+        "digital": "0:01",
+        "decimal": "0.02",
+        "text": "1 min",
+        "hours": 0,
+        "minutes": 1
+      },
+      {
+        "total_seconds": 49.907362,
+        "name": "Ocelot",
+        "percent": 0.04,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 37.158038,
+        "name": "OtpNet",
+        "percent": 0.03,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 27.281752,
+        "name": "NetworkCredential(_username,_password)",
+        "percent": 0.02,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 15.344696,
+        "name": "SilentCustomerAuthorizationService",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 15.344696,
+        "name": "DryIoc",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 15.344696,
+        "name": "SilentRFIDAuthorizationService",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 15.344696,
+        "name": "SilentAuthorizationService",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 13.917167,
+        "name": "CustomerScreenModule",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 7.049698,
+        "name": "a",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 6.861359,
+        "name": "OxyPlot",
+        "percent": 0.01,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 2.499011,
+        "name": "timeProvider",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 1.22173,
+        "name": "Internal",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 1.22173,
+        "name": "ruleSetNames))action()",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 1.22173,
+        "name": "Results",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 0.048001,
+        "name": "XLWorkbook()",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 0.048001,
+        "name": "ClosedXML",
+        "percent": 0.0,
+        "digital": "0:00",
+        "decimal": "0.00",
+        "text": "0 secs",
+        "hours": 0,
+        "minutes": 0
+      }
+    ],
+    "human_readable_total_including_other_language": "31 hrs 39 mins",
+    "daily_average_including_other_language": 22788.0,
+    "best_day": {
+      "date": "2025-09-04",
+      "total_seconds": 26036.810437,
+      "text": "7 hrs 13 mins"
+    },
+    "operating_systems": [
+      {
+        "total_seconds": 113940.869789,
+        "name": "Windows",
+        "percent": 100.0,
+        "digital": "31:39",
+        "decimal": "31.65",
+        "text": "31 hrs 39 mins",
+        "hours": 31,
+        "minutes": 39
+      }
+    ],
+    "human_readable_daily_average": "6 hrs 19 mins",
+    "is_stuck": false,
+    "projects": [
+      {
+        "total_seconds": 79204.175983,
+        "name": "NovaCenter",
+        "percent": 69.51,
+        "digital": "22:00",
+        "decimal": "22.00",
+        "text": "22 hrs",
+        "hours": 22,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 14445.606411,
+        "name": "Nova.Automation",
+        "percent": 12.68,
+        "digital": "4:00",
+        "decimal": "4.00",
+        "text": "4 hrs",
+        "hours": 4,
+        "minutes": 0
+      },
+      {
+        "total_seconds": 13547.141142,
+        "name": "NovaAutomation",
+        "percent": 11.89,
+        "digital": "3:45",
+        "decimal": "3.75",
+        "text": "3 hrs 45 mins",
+        "hours": 3,
+        "minutes": 45
+      },
+      {
+        "total_seconds": 6743.946253,
+        "name": "StellarLicenseManager",
+        "percent": 5.92,
+        "digital": "1:52",
+        "decimal": "1.87",
+        "text": "1 hr 52 mins",
+        "hours": 1,
+        "minutes": 52
+      }
+    ],
+    "daily_average": 22757.0,
+    "human_readable_daily_average_including_other_language": "6 hrs 19 mins",
+    "days_minus_holidays": 5,
+    "percent_calculated": 100,
+    "days_including_holidays": 7,
+    "is_already_updating": false,
+    "categories": [
+      {
+        "name": "Coding",
+        "total_seconds": 96057.202359,
+        "percent": 84.3,
+        "digital": "26:40",
+        "decimal": "26.67",
+        "text": "26 hrs 40 mins",
+        "hours": 26,
+        "minutes": 40
+      },
+      {
+        "name": "Debugging",
+        "total_seconds": 16814.328144,
+        "percent": 14.76,
+        "digital": "4:40",
+        "decimal": "4.67",
+        "text": "4 hrs 40 mins",
+        "hours": 4,
+        "minutes": 40
+      },
+      {
+        "name": "Building",
+        "total_seconds": 1069.339286,
+        "percent": 0.94,
+        "digital": "0:17",
+        "decimal": "0.28",
+        "text": "17 mins",
+        "hours": 0,
+        "minutes": 17
+      }
+    ],
+    "is_up_to_date": true,
+    "human_readable_total": "31 hrs 36 mins",
+    "is_cached": true,
+    "username": "PnterNN",
+    "is_including_today": false,
+    "human_readable_range": "last week",
+    "is_coding_activity_visible": true,
+    "is_language_usage_visible": true,
+    "is_editor_usage_visible": true,
+    "is_category_usage_visible": true,
+    "is_os_usage_visible": true
+  }
+}
