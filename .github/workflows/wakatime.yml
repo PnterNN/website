@@ -28,12 +28,11 @@ jobs:
           import requests, json, os
 
           api_key = os.getenv("WAKATIME_API_KEY")
-          headers = {"Authorization": f"Bearer {api_key}"}
 
-          # İlk test için last_7_days kullan, çalıştığında all_time'a geçebilirsin
-          url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
+          # İlk test için last_7_days kullan, çalışırsa all_time'a geçebilirsin
+          url = f"https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key={api_key}"
 
-          r = requests.get(url, headers=headers)
+          r = requests.get(url)
           if r.status_code == 200:
               data = r.json()
               os.makedirs("public", exist_ok=True)
