@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.9ea8934b.css",
-    "main.js": "/website/static/js/main.b471dff6.js",
+    "main.css": "/website/static/css/main.f9fd6da9.css",
+    "main.js": "/website/static/js/main.5e7ab857.js",
     "static/js/206.c7ebfab1.chunk.js": "/website/static/js/206.c7ebfab1.chunk.js",
     "static/media/blog-post-1.jpg": "/website/static/media/blog-post-1.eb342c85946b4b0330dc.jpg",
     "static/media/project-1.jpg": "/website/static/media/project-1.548959f634d2329ad3d2.jpg",
@@ -11,12 +11,12 @@
     "static/media/project-0.png": "/website/static/media/project-0.31a5b42b1bf8ace19500.png",
     "static/media/fontawesome-webfont.eot": "/website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/website/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/dark.jpg": "/website/static/media/dark.0c41ed595b61db2ffaba.jpg",
+    "static/media/img-mobile.jpg": "/website/static/media/img-mobile.0c41ed595b61db2ffaba.jpg",
     "static/media/404.jpg": "/website/static/media/404.19e523cdb4d4a12db938.jpg",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/website/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/website/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/project-2.jpg": "/website/static/media/project-2.c41b2d86150dd593e66d.jpg",
-    "static/media/dark.jpg": "/website/static/media/dark.82f031a8e4bdb24c95b4.jpg",
-    "static/media/img-mobile.jpg": "/website/static/media/img-mobile.82f031a8e4bdb24c95b4.jpg",
     "static/media/slick.svg": "/website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/website/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -26,7 +26,7 @@
     "index.html": "/website/index.html"
   },
   "entrypoints": [
-    "static/css/main.9ea8934b.css",
-    "static/js/main.b471dff6.js"
+    "static/css/main.f9fd6da9.css",
+    "static/js/main.5e7ab857.js"
   ]
 }
