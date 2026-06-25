@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubilay Baltaoğlu | Software Engineer</title>
+    <meta name="description" content="Kubilay Baltaoğlu - Software Engineer. .NET Developer at Stellar Teknoloji. Full-stack developer specializing in C#, Java, Python and modern web technologies.">
+    <meta property="og:title" content="Kubilay Baltaoğlu | Portfolio">
+    <meta property="og:description" content="Software Engineer & .NET Developer">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ══════════ AMBIENT LAYERS ══════════ -->
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <canvas id="smoke-canvas" aria-hidden="true"></canvas>
+
+    <!-- ══════════ CINEMATIC INTRO ══════════ -->
+    <div id="intro-overlay" aria-hidden="true">
+        <div class="intro-content">
+            <div class="intro-line intro-line--left"></div>
+            <p class="intro-quote">"Tarih yalnızca mutsuzları yazar."</p>
+            <div class="intro-line intro-line--right"></div>
+        </div>
+        <span class="intro-skip">Skip <i class="fa-solid fa-angles-right"></i></span>
+    </div>
+
+    <!-- ══════════ SIDE NAVIGATION ══════════ -->
+    <nav class="side-nav" id="sideNav" aria-label="Section Navigation">
+        <a href="#hero"       class="nav-dot active" data-section="hero"><span class="nav-label">Home</span></a>
+        <a href="#about"      class="nav-dot" data-section="about"><span class="nav-label">About</span></a>
+        <a href="#skills"     class="nav-dot" data-section="skills"><span class="nav-label">Skills</span></a>
+        <a href="#experience" class="nav-dot" data-section="experience"><span class="nav-label">Experience</span></a>
+        <a href="#projects"   class="nav-dot" data-section="projects"><span class="nav-label">Projects</span></a>
+        <a href="#stats"      class="nav-dot" data-section="stats"><span class="nav-label">Stats</span></a>
+        <a href="#contact"    class="nav-dot" data-section="contact"><span class="nav-label">Contact</span></a>
+    </nav>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--              HERO SECTION             -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <p class="hero-motto">"Tarih yalnızca mutsuzları yazar."</p>
+            <div class="hero-divider"><span class="divider-diamond">◆</span></div>
+            <h1 class="hero-name">KUBILAY<br><span>BALTAOĞLU</span></h1>
+            <p class="hero-title">Software Engineer</p>
+            <div class="hero-social">
+                <a href="https://github.com/PnterNN" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/PntherNN" target="_blank" rel="noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/kubilay-baltao%C4%9Flu-a16a40276/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://medium.com/@kubilaybaltaoglu" target="_blank" rel="noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <span class="scroll-text">Explore</span>
+                <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--             ABOUT SECTION             -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="assets/img/hero.jpg" alt="Kubilay Baltaoğlu" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        Passionate Software Engineer with expertise in full-stack development and automation solutions.
+                        Currently advancing my education with a Bachelor's degree in Software Engineering at Dogus University,
+                        while working as a <strong>.NET Developer</strong> at <strong>Stellar Teknoloji</strong>, creating innovative automation applications for the fuel industry.
+                    </p>
+                    <p class="about-text">
+                        I specialize in C#, Java, Python, and modern web technologies including React, HTML, CSS, and JavaScript.
+                        My journey from game development to enterprise solutions has shaped my versatile approach to problem-solving and continuous learning.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Kubilay Baltaoğlu</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Age</span>
+                            <span class="info-value" id="ageValue">—</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Istanbul, Turkey</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">kubilaybaltaoglu@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Languages</span>
+                            <span class="info-value">Turkish, English</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Freelance</span>
+                            <span class="info-value status-available">Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--            SKILLS SECTION             -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">My Arsenal</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Populated by JS from WakaTime API -->
+                <div class="skills-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading data...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--          EXPERIENCE SECTION           -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">History</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="timeline-grid">
+                <!-- Experience Column -->
+                <div class="timeline-col">
+                    <h3 class="timeline-heading reveal"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">June 2024 — Present</span>
+                                <h4 class="timeline-role">.NET Developer</h4>
+                                <p class="timeline-company">Stellar Teknoloji</p>
+                                <p class="timeline-desc">Developing automation applications for the fuel industry.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">May 2020 — Jan 2023</span>
+                                <h4 class="timeline-role">Game Developer</h4>
+                                <p class="timeline-company">Freelancer</p>
+                                <p class="timeline-desc">Gained Java experience by coding in-game add-ons and plugins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Column -->
+                <div class="timeline-col">
+                    <h3 class="timeline-heading reveal"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2025 — Present</span>
+                                <h4 class="timeline-role">Bachelor's Degree</h4>
+                                <p class="timeline-company">Dogus University</p>
+                                <p class="timeline-desc">Studying Software Engineering.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2024</span>
+                                <h4 class="timeline-role">Associate Degree</h4>
+                                <p class="timeline-company">Istanbul Commerce University</p>
+                                <p class="timeline-desc">Graduated from Computer Programming.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2022</span>
+                                <h4 class="timeline-role">High School</h4>
+                                <p class="timeline-company">Kartal Final</p>
+                                <p class="timeline-desc">Completed high school education.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--           PROJECTS SECTION            -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Operations</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="work">Work</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="work">
+                    <div class="project-visual" style="--accent: #c9a84c;">
+                        <i class="fa-solid fa-gas-pump project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Fuel Industry Automation</h3>
+                        <p class="project-desc">Automation application for the fuel industry.</p>
+                        <div class="project-tags">
+                            <span>C#</span><span>JavaScript</span><span>Java</span>
+                        </div>
+                        <a href="https://stellarteknoloji.com/" target="_blank" rel="noreferrer" class="project-link">
+                            <span>View</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="work">
+                    <div class="project-visual" style="--accent: #8b5e3c;">
+                        <i class="fa-solid fa-photo-film project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Fuel Industry Multimedia</h3>
+                        <p class="project-desc">Multimedia application for the fuel industry.</p>
+                        <div class="project-tags">
+                            <span>C#</span><span>JavaScript</span><span>Java</span>
+                        </div>
+                        <a href="https://stellarteknoloji.com/" target="_blank" rel="noreferrer" class="project-link">
+                            <span>View</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="personal">
+                    <div class="project-visual" style="--accent: #4a7c8b;">
+                        <i class="fa-solid fa-comments project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Naber — Chat App</h3>
+                        <p class="project-desc">Real-time desktop chat application.</p>
+                        <div class="project-tags">
+                            <span>C#</span><span>.NET</span><span>MVVM</span>
+                        </div>
+                        <a href="https://github.com/PnterNN/Naber-ChatApp" target="_blank" rel="noreferrer" class="project-link">
+                            <span>GitHub</span> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-category="personal">
+                    <div class="project-visual" style="--accent: #6b4a8b;">
+                        <i class="fa-solid fa-futbol project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Bola V2 — Football Game</h3>
+                        <p class="project-desc">3D football game developed with OpenGL.</p>
+                        <div class="project-tags">
+                            <span>C++</span><span>OpenGL</span>
+                        </div>
+                        <a href="https://github.com/PnterNN/Football-Game-OpenGL" target="_blank" rel="noreferrer" class="project-link">
+                            <span>GitHub</span> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--            STATS SECTION              -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="stats" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Records</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <i class="fa-solid fa-code stat-icon"></i>
+                    <div class="stat-value" id="statCodingTime">—</div>
+                    <div class="stat-label">Total Coding Time</div>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fa-solid fa-clock stat-icon"></i>
+                    <div class="stat-value" id="statDailyAvg">—</div>
+                    <div class="stat-label">Daily Average</div>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fa-brands fa-github stat-icon"></i>
+                    <div class="stat-value" id="statRepos">—</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fa-solid fa-star stat-icon"></i>
+                    <div class="stat-value" id="statStars">—</div>
+                    <div class="stat-label">GitHub Stars</div>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fa-solid fa-users stat-icon"></i>
+                    <div class="stat-value" id="statFollowers">—</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-card reveal">
+                    <i class="fa-solid fa-calendar-days stat-icon"></i>
+                    <div class="stat-value" id="statYears">—</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ -->
+    <!--           CONTACT SECTION             -->
+    <!-- ══════════════════════════════════════ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06</span>
+                <h2 class="section-title">Last Word</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap reveal">
+                    <p class="contact-intro">I'm gonna make you an offer you can't refuse. Leave your message — and consider it handled.</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="user_name" id="userName" required placeholder=" ">
+                                <label for="userName">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="user_email" id="userEmail" required placeholder=" ">
+                                <label for="userEmail">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Send</span>
+                            <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Istanbul, Kartal, Turkey</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kubilaybaltaoglu@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+90 505 061 75 99</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/PnterNN" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/PntherNN" target="_blank" rel="noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/kubilay-baltao%C4%9Flu-a16a40276/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://medium.com/@kubilaybaltaoglu" target="_blank" rel="noreferrer"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-line"></div>
+            <p>&copy; 2024 Kubilay Baltaoğlu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ══════════ TOAST ══════════ -->
+    <div id="toast" class="toast" role="alert"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/cinematics.js"></script>
+    <script src="js/smoke.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
