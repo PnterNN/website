@@ -172,7 +172,7 @@ strong { color: var(--gold); font-weight: 600; }
     color: var(--gold);
     white-space: nowrap;
     opacity: 0;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.05em;
     filter: blur(6px);
     animation: quoteDeblur 2s 1s var(--ease-out-expo) forwards;
 }
@@ -180,7 +180,6 @@ strong { color: var(--gold); font-weight: 600; }
 @keyframes quoteDeblur {
     to {
         opacity: 1;
-        letter-spacing: 0.05em;
         filter: blur(0);
         text-shadow: 0 0 40px rgba(201, 168, 76, 0.3);
     }
@@ -196,23 +195,92 @@ strong { color: var(--gold); font-weight: 600; }
     50% { text-shadow: 0 0 40px rgba(201, 168, 76, 0.4), 0 0 80px rgba(201, 168, 76, 0.15); }
 }
 
+/* ─── BULLET & SHATTER EFFECTS ─── */
+.bullet-tracer {
+    position: absolute;
+    top: 50%;
+    left: -10vw;
+    width: 150px;
+    height: 4px;
+    background: #ffaa00;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff5500, -50px 0 30px rgba(255, 50, 0, 0.8);
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.bullet-tracer.shoot {
+    animation: shootBullet 0.6s cubic-bezier(0.8, 0, 1, 1) forwards;
+}
+
+@keyframes shootBullet {
+    0% {
+        left: -10vw;
+        opacity: 1;
+        width: 150px;
+    }
+    100% {
+        left: 110vw;
+        opacity: 1;
+        width: 300px;
+    }
+}
+
+.intro-quote.shatter {
+    animation: shatterText 0.8s ease-out forwards;
+}
+
+@keyframes shatterText {
+    0% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+        text-shadow: 0 0 40px rgba(201, 168, 76, 0.5);
+    }
+    15% {
+        transform: scale(1.05);
+        filter: blur(2px) drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+        opacity: 0.9;
+        color: #fff;
+    }
+    100% {
+        transform: scale(1.1);
+        filter: blur(10px) drop-shadow(0 0 30px rgba(255, 0, 0, 0.2));
+        opacity: 0;
+    }
+}
+
 .intro-line {
-    width: 0;
+    width: 120px;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     opacity: 0;
+    transform: scaleX(0);
 }
 
 .intro-line--left {
+    transform-origin: right;
     animation: lineExpand 1.5s 1.5s var(--ease-out-expo) forwards;
 }
 
 .intro-line--right {
+    transform-origin: left;
     animation: lineExpand 1.5s 1.8s var(--ease-out-expo) forwards;
 }
 
 @keyframes lineExpand {
-    to { width: 120px; opacity: 1; }
+    to { transform: scaleX(1); opacity: 1; }
+}
+
+.intro-line.shatter {
+    animation: lineShatter 0.5s ease-out forwards;
+}
+
+@keyframes lineShatter {
+    0% { transform: scaleX(1); opacity: 1; }
+    100% { transform: scaleX(2); opacity: 0; filter: blur(4px); }
 }
 
 @keyframes introFadeIn {
@@ -343,6 +411,16 @@ strong { color: var(--gold); font-weight: 600; }
 @keyframes heroPulse {
     0%, 100% { opacity: 0.2; transform: translate(-50%, -50%) scale(1); }
     50% { opacity: 0.4; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* Pause hero animations until intro is dismissed */
+body:not(.intro-dismissed) .hero-motto,
+body:not(.intro-dismissed) .hero-divider,
+body:not(.intro-dismissed) .hero-name,
+body:not(.intro-dismissed) .hero-title,
+body:not(.intro-dismissed) .hero-social,
+body:not(.intro-dismissed) .scroll-indicator {
+    animation-play-state: paused;
 }
 
 .hero-content {

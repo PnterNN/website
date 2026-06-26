@@ -44,19 +44,15 @@
         // Prevent scroll during intro
         document.body.style.overflow = 'hidden';
 
-        // After deblur animation completes (~3s), add glow class
-        setTimeout(() => {
-            if (quote && !dismissed) {
-                quote.classList.add('glow');
-            }
-        }, 3000);
-
         function dismissIntro() {
             if (dismissed) return;
             dismissed = true;
 
             overlay.classList.add('fade-out');
             document.body.style.overflow = '';
+            
+            // Trigger hero content animations
+            document.body.classList.add('intro-dismissed');
 
             // Show side nav after overlay fades
             const sideNav = document.getElementById('sideNav');
@@ -70,8 +66,26 @@
             }, 1500);
         }
 
-        // Auto-dismiss after 5 seconds (giving animations time to play)
-        setTimeout(dismissIntro, 5000);
+        // Shoot bullet, shatter text, then dismiss
+        setTimeout(() => {
+            if (quote && !dismissed) {
+                const bullet = overlay.querySelector('.bullet-tracer');
+                if (bullet) {
+                    bullet.classList.add('shoot');
+                }
+
+                // Bullet passes text midway (~200ms)
+                setTimeout(() => {
+                    if (!dismissed) {
+                        quote.classList.add('shatter');
+                        overlay.querySelectorAll('.intro-line').forEach(line => line.classList.add('shatter'));
+                    }
+                }, 200);
+
+                // Open page after shatter completes
+                setTimeout(dismissIntro, 1000);
+            }
+        }, 3200);
 
         // Click skip button
         if (skipBtn) {
